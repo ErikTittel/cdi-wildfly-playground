@@ -16,13 +16,25 @@ public class Game implements Serializable {
     private Instance<Integer> number;
     @Inject
     private MessageHolder messageHolder;
+    private String opinion;
 
     public int getNumber() {
         return number.get();
     }
 
-    @Logging
     public String getMessage() {
         return messageHolder.getMessage();
+    }
+
+    public void check() {
+        messageHolder.setMessage(opinion);
+    }
+
+    public void setOpinion(String opinion) {
+        this.opinion = opinion;
+    }
+
+    public String getOpinion() {
+        return opinion;
     }
 }

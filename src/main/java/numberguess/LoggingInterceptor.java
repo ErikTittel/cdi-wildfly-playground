@@ -18,8 +18,7 @@ public class LoggingInterceptor implements Serializable {
 
     @AroundInvoke
     public Object doLog(InvocationContext ctx) throws Exception {
-        messageHolder.setMessage("Message from Interceptor");
-        LOG.info("Info-Log-Message from Logging Interceptor: I'm in the method: " + ctx.getMethod());
+        LOG.info("Method got called: " + ctx.getMethod() + ", Parameter value: '" + ctx.getParameters()[0] + '\'');
         return ctx.proceed();
     }
 

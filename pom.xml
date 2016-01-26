@@ -83,7 +83,7 @@
     </dependencies>
 
     <build>
-        <finalName>erik-numberguess</finalName>
+        <finalName>cdi-wildfly-playground</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

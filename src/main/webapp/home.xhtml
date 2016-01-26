@@ -12,6 +12,8 @@
             <div>Hello, just some text</div>
             <div>I'm thinking of the number #{game.number}</div>
             <div>A message: #{game.message}</div>
+            <h:inputText id="opinion" value="#{game.opinion}" required="true"/>
+            <h:commandButton id="guessButton" value="Guess" action="#{game.check}"/>
         </h:form>
     </ui:define>
 </ui:composition>
