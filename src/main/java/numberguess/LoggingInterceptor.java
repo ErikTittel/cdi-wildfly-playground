@@ -1,7 +1,9 @@
 package numberguess;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.Serializable;
-import java.util.logging.Logger;
 
 import javax.inject.Inject;
 import javax.interceptor.AroundInvoke;
@@ -11,7 +13,7 @@ import javax.interceptor.InvocationContext;
 @Interceptor @Logging
 public class LoggingInterceptor implements Serializable {
 
-    private static final Logger LOG = Logger.getLogger(LoggingInterceptor.class.getName());
+    private static final Logger LOG = LoggerFactory.getLogger(LoggingInterceptor.class);
 
     @Inject
     private MessageHolder messageHolder;

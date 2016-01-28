@@ -36,27 +36,32 @@
             <version>2.3.2.Final</version>
         </dependency>
         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.7</version>
+        </dependency>
+
+        <!-- provided -->
+        <dependency>
             <groupId>javax.enterprise</groupId>
             <artifactId>cdi-api</artifactId>
             <version>1.2</version>
             <scope>provided</scope>
         </dependency>
-
-        <!-- provided -->
         <dependency>
             <groupId>org.jboss.spec.javax.faces</groupId>
             <artifactId>jboss-jsf-api_2.2_spec</artifactId>
             <version>2.2.4</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- test -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- test -->
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-integration</artifactId>
